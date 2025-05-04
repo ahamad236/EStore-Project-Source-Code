@@ -1,0 +1,101 @@
+$search-bar-background-color: #dadada;
+$search-bar-height: 2.5em;
+$search-bar-border: none;
+
+.search-bar {
+    background-color: #dadada;
+    height: 2.5em;
+    border: none;
+}
+
+.header {
+    max-width: 100%;
+    box-shadow: 5px 5px 20px gray;
+    overflow: hidden;
+}
+
+.brand {
+    color: white;
+    margin-left: 2%;
+    padding: 0.8em;
+    width: 23%;
+}
+
+.search-box {
+    width: 75%;
+    height: $search-bar-height;
+    display: inline-block;
+    border: $search-bar-border;
+}
+
+.search-button {
+    width: 10%;
+    height: $search-bar-height;
+    border: $search-bar-border;
+    background-color: $search-bar-background-color;
+}
+
+.dropdown {
+    width: 15%;
+    height: $search-bar-height;
+    border: $search-bar-border;
+    background-color: $search-bar-background-color;
+    font-weight: 600;
+}
+
+.login-container {
+    color: white;
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+    margin: 1.7em 0.2em 0 0;
+
+    h5 {
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .user-icon {
+        margin-right: 0.4em;
+        padding: 0.2em;
+        font-size: 1.3em;
+    }
+}
+
+.user-container {
+    color: white;
+    display: inline-block;
+    width: 10em;
+    margin: 1.5em 0.2em 0 1.5em;
+}
+
+.user-dropdown {
+    background-color: #212529;
+    width: 11em;
+    z-index: 1000;
+    position: absolute;
+}
+
+.user-dropdown-button {
+    background-color: #212529;
+    border-color: #212529;
+}
+
+.cart-wishlist {
+    width: 8%;
+    margin-top: 1.7em;
+    margin-left: 1em;
+
+
+    .list-item {
+        color: white;
+        list-style-type: none;
+        display: inline-block;
+        font-size: 1.3em;
+        margin-right: 0.5em;
+    }
+}

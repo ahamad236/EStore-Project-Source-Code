@@ -1,0 +1,72 @@
+<div class="header bg-dark">
+  <div class="row">
+    <div class="brand my-1">
+      <h1>eStore</h1>
+    </div>
+
+    <div class="p-0 my-4 w-50 h-25 bg-white">
+      <ng-container *ngIf="displaySearch">
+        <select #categoryOptions class="dropdown p-0 m-0">
+          <option
+            *ngFor="let category of categoryStore.topLevelCategories$ | async"
+            value="{{ category.id }}"
+          >
+            {{ category.category }}
+          </option>
+        </select>
+        <input
+          #keyword
+          class="form-control search-box"
+          placeholder="Search..."
+        />
+        <button
+          (click)="onClickSearch(keyword.value, categoryOptions.value)"
+          class="search-button"
+        >
+          <fa-icon [icon]="faSearch"></fa-icon>
+        </button>
+      </ng-container>
+    </div>
+
+    <div class="login-container p-0" *ngIf="!isUserAuthenticated">
+      <fa-icon class="user-icon" [icon]="faUserCircle"></fa-icon>
+      <h5><a routerLink="login">Sign in / Join</a></h5>
+    </div>
+
+    <div class="user-container p-0" *ngIf="isUserAuthenticated">
+      <div class="dropdown user-dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle user-dropdown-button"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <fa-icon class="user-icon" [icon]="faUserCircle"></fa-icon>
+          Hi {{ userName }}
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" (click)="pastOrders()">Past Orders</a></li>
+          <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cart-wishlist p-0 list-item">
+      <button
+        type="button"
+        class="btn btn-dark position-relative"
+        (click)="navigateToCart()"
+      >
+        <fa-icon [icon]="faShoppingCart"></fa-icon>
+        <ng-container *ngIf="cartStore.cart$ | async as cart">
+          <span
+            *ngIf="cart.totalProducts > 0"
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark"
+          >
+            {{ cart.totalProducts }}
+          </span>
+        </ng-container>
+      </button>
+    </div>
+  </div>
+</div>

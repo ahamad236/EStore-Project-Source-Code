@@ -1,0 +1,63 @@
+<div class="row fc-main-div">
+  <label class="col-sm-2 col-form-label">Select Order</label>
+  <div class="col-sm-3">
+    <select class="form-select" (change)="selectOrder($event)">
+      <option value="0" selected>Please select value</option>
+      <option *ngFor="let pastOrder of pastOrders" value={{pastOrder.orderId}}>
+        {{ pastOrder.orderId }} Date: {{ pastOrder.orderDate }}
+      </option>
+    </select>
+  </div>
+</div>
+<div class="row my-5 fc-main-div" *ngIf='pastOrder'>
+  <div class="col-8 p-4">
+    <div class="row order-item-card" *ngFor="let product of pastOrderProducts">
+      <div class="col-4">
+        <img [src]="'../../../../assets/images/' + product.productImage" />
+      </div>
+      <div class="col-8">
+        <div class="p-3 order-item-details">
+          <span class="order-item-name">
+            {{ product.productName }}
+          </span>
+          <div class="order-item-price">
+            <span> {{ product.price | currency }} </span>
+          </div>
+          <hr />
+          <span class="order-item-name"> Quantity </span>
+          <div class="order-item-price">
+            {{ product.qty }}
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="row">
+      <div class="px-4 py-1 my-3 order-summary">
+        <h2 class="mb-5 mt-3">Delivery Address</h2>
+        <span>Name : {{ pastOrder.userName }} </span>
+        <span>Address : {{ pastOrder.address }}</span>
+        <span>City : {{ pastOrder.city }}</span>
+        <span>State: {{ pastOrder.state }}</span>
+        <span>Pin: {{ pastOrder.pin }}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="px-4 py-3 my-4 order-summary">
+        <h2 class="mb-5 mt-3">Summary</h2>
+        <div>
+          <span> Order Total : {{ pastOrder.total | currency }} </span>
+          <span> Shipping Charges : Free </span>
+          <hr />
+          <span class="summary-total">
+            Total : {{ pastOrder.total | currency }}
+          </span>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="row my-5 product-details-container">
+  <ng-container *ngIf="product">
+    <div class="col-5 product-image-container">
+      <img [src]="'../../../../assets/images/' + product.product_img" />
+    </div>
+    <div class="col-7 product-information-container">
+      <span id="product-name"> {{ product.product_name }} </span>
+      <app-ratings [score]="product.ratings"></app-ratings>
+      <hr />
+      <div class="product-price">
+        Price : <span class="price"> {{ product.price | currency }} </span>
+        <div>Inclusive of all taxes.</div>
+      </div>
+      <div class="my-3 product-description">
+        {{ product.product_description }}
+      </div>
+      <div class="my-5 btn btn-warning cart-button" (click)="addToCart()">
+        <div class="cart-icon-container">
+          <fa-icon [icon]="faShoppingCart"></fa-icon>
+        </div>
+        <div class="cart-text-container">
+          <p>Add to Cart</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

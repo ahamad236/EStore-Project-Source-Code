@@ -1,0 +1,151 @@
+<div class="container">
+  <div class="text-center">
+    <h2>Become A Member</h2>
+  </div>
+  <form [formGroup]="userSignupForm" (ngSubmit)="onSubmit()">
+    <div class="row form-group-margin">
+      <div class="form-group col-md-6">
+        <label for="firstName">First Name*</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          formControlName="firstName"
+        />
+        <span
+          class="text-danger"
+          *ngIf="firstName?.touched && firstName?.errors?.['required']"
+        >
+          First Name is required
+        </span>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lastName"
+          formControlName="lastName"
+        />
+      </div>
+    </div>
+
+    <div class="form-group form-group-margin">
+      <label for="address">Address</label>
+      <input
+        type="text"
+        class="form-control"
+        id="address"
+        formControlName="address"
+      />
+    </div>
+
+    <div class="form-group form-group-margin">
+      <label for="city">City</label>
+      <input
+        type="text"
+        class="form-control"
+        id="city"
+        formControlName="city"
+      />
+    </div>
+
+    <div class="form-group form-group-margin">
+      <label for="address">State</label>
+      <input
+        type="text"
+        class="form-control"
+        id="state"
+        formControlName="state"
+      />
+    </div>
+
+    <div class="form-group form-group-margin">
+      <label for="pin">Pin / Zip code</label>
+      <input type="text" class="form-control" id="pin" formControlName="pin" />
+    </div>
+
+    <div class="form-group form-group-margin">
+      <label for="email">Email*</label>
+      <input
+        type="text"
+        class="form-control"
+        id="email"
+        formControlName="email"
+      />
+      <span
+        class="text-danger"
+        *ngIf="email?.touched && email?.errors?.['required']"
+      >
+        Email is required
+      </span>
+
+      <span
+        class="text-danger"
+        *ngIf="email?.touched && email?.errors?.['email']"
+      >
+        Enter valid email address
+      </span>
+    </div>
+    <div class="form-group form-group-margin">
+      <label for="password">Password*</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        formControlName="password"
+      />
+      <span
+        class="text-danger"
+        *ngIf="password?.touched && password?.errors?.['required']"
+      >
+        Password is required
+      </span>
+    </div>
+
+    <div class="form-group form-group-margin">
+      <label for="confirmPassword">Confirm Password*</label>
+      <input
+        type="password"
+        class="form-control"
+        id="confirmPassword"
+        formControlName="confirmPassword"
+      />
+      <span
+        class="text-danger"
+        *ngIf="confirmPassword?.touched && confirmPassword?.errors?.['required']"
+      >
+        Confirm Password is required
+      </span>
+
+      <span
+        class="text-danger"
+        *ngIf="confirmPassword?.touched && userSignupForm.errors?.['passwordMismatch']"
+      >
+        Passwords doesn't match
+      </span>
+    </div>
+    <div class="text-center form-group-margin">
+      <button
+        type="submit"
+        class="btn btn-warning"
+        [disabled]="!userSignupForm.valid"
+      >
+        Join
+      </button>
+    </div>
+    <div
+      class="alert"
+      [ngClass]="
+        alertType === 0
+          ? 'alert-success'
+          : alertType === 1
+          ? 'alert-warning'
+          : 'alert-danger'
+      "
+      *ngIf="alertMessage !== ''"
+    >
+      {{ alertMessage }}
+    </div>
+  </form>
+</div>

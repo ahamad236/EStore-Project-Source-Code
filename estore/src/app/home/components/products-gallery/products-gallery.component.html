@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-4">
+      <app-sidenavigation
+        (subCategoryClicked)="onSelectSubCategory($event)"
+      ></app-sidenavigation>
+    </div>
+    <div class="col-lg-10 col-md-9 col-sm-8">
+      <app-products></app-products>
+    </div>
+  </div>
+</div>
