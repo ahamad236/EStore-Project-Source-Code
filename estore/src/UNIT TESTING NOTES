@@ -1,0 +1,40 @@
+
+            TERMINOLOGY
+           -------------
+
+-> INTENDED RESULTS
+-> IF THERE ARE ANY ERRORS OR SHORTCOMINGS IN THE CODE WHEN TESTED IN DIFFERENT SCENARIOS
+-> TO FIND AND FIX THE FLAWS
+-> MANUAL TESTING
+-> AUTOMATED TESTING
+-> TEST DRIVEN DEVELOPMENT(TDD)
+-> TEST LATER DEVELOPMENT(TLD)
+-> ISOLATION
+-> UNIT TESTING
+-> INTEGRATED TESTING
+-> END TO END TESTING
+-> JASMINE
+-> KARMA
+-> describe FUNCTION
+-> it FUNCTION
+-> expect FUNCTION
+-> toEqual FUNCTION IN expect FUNCTION
+-> TO TEST WE HAVE TO RUN COMMAND : ng test
+-> TO OMIT TEST FROM OTHER FILES WE HAVE TO ADD PREFIX x BEFORE THE describe FUNCTION
+-> TO RUN ONLY THE TEST FILE WE EANT WE HAVE TO ADD PREFIX f BEFORE THE describe FUNCTION
+
+
+
+            ON 26-06-2025
+           ---------------
+
+  SECTION 23: ANGULAR TESTING
+ -----------------------------
+
+ -> 296. Intro - Why Testing? Manual Vs Automated
+ -> 297. Unit Vs. Integrated Vs. End to End
+ -> 298. Jasmine & Karma - First Test
+ -> 299. 
+
+
+
