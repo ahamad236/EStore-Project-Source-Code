@@ -1,6 +1,5 @@
 export class ProductsStoreItemMock {
-    // loadProducts: any;
-    loadProducts: () => {};
+    loadProducts(): any { };
     products$: any;
     products: any[] = [];
 }

@@ -1,8 +1,7 @@
 export class CartStoreItemMock {
     cart$: any;
     cart: any;
-    // addProduct: any;
-    addProduct: () => {};
+    addProduct(): any { };
     decreaseProductQuantity: any;
     removeProduct: any;
     saveCart: any;
