@@ -27,6 +27,7 @@
 -> ComponentFixture Class and TestBed Interface
 -> it FUNCTION
 -> expect FUNCTION
+-> toBeTruthy FUNCTION, toHaveBeenCalledWith FUNCTION
 -> 
 
 
