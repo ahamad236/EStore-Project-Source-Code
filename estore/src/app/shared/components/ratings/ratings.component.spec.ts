@@ -3,7 +3,7 @@ import { RatingsComponent } from './ratings.component';
 import { faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarEmpty } from '@fortawesome/free-regular-svg-icons';
 
-fdescribe('RatingsComponent', () => {
+describe('RatingsComponent', () => {
   let component: RatingsComponent;
   let fixture: ComponentFixture<RatingsComponent>;
 
