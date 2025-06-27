@@ -22,6 +22,12 @@
 -> TO TEST WE HAVE TO RUN COMMAND : ng test
 -> TO OMIT TEST FROM OTHER FILES WE HAVE TO ADD PREFIX x BEFORE THE describe FUNCTION
 -> TO RUN ONLY THE TEST FILE WE EANT WE HAVE TO ADD PREFIX f BEFORE THE describe FUNCTION
+-> beforeEach FUNCTION and beforeAll FUNCTION
+-> afterEach FUNCTION and afterAll FUNCTION
+-> ComponentFixture Class and TestBed Interface
+-> it FUNCTION
+-> expect FUNCTION
+-> 
 
 
 
@@ -34,7 +40,14 @@
  -> 296. Intro - Why Testing? Manual Vs Automated
  -> 297. Unit Vs. Integrated Vs. End to End
  -> 298. Jasmine & Karma - First Test
- -> 299. 
 
+
+
+            ON 27-06-2025
+           ---------------
+
+ -> 299. Jasmine before() and after() methods
+ -> 300. Unit tests for rating component
+ -> 301. 
 
 
