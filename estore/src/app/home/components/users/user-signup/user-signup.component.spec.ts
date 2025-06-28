@@ -78,6 +78,17 @@ fdescribe('UserRegistrationComponent', () => {
     expect(component.alertType).toEqual(0);
   }));
 
+  it('should set email error message if email already registered', fakeAsync(() => {
+    spyOn(userService, 'createUser').and.returnValue(
+      of({ message: 'Email already exist' })
+    );
+
+    component.onSubmit();
+    tick();
+
+    expect(component.alertMessage).toEqual('Email already exist');
+    expect(component.alertType).toEqual(1);
+  }));
 
 
 
