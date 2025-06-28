@@ -38,9 +38,21 @@ fdescribe('UserRegistrationComponent', () => {
     component.firstName?.patchValue('Tom');
     fixture.detectChanges();
     expect(component.firstName?.valid).toBeTrue();
+  });
 
+  it('should require valid email value', () => {
+    component.email?.patchValue('');
+    fixture.detectChanges();
+    expect(component.email?.valid).toBeFalse();
 
-  })
+    component.email?.patchValue('tom');
+    fixture.detectChanges();
+    expect(component.email?.valid).toBeFalse();
+
+    component.email?.patchValue('tom@gmail.com');
+    fixture.detectChanges();
+    expect(component.email?.valid).toBeTrue();
+  });
 
 
 });
