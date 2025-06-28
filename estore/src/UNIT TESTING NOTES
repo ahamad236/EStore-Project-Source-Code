@@ -27,10 +27,11 @@
 -> ComponentFixture Class and TestBed Interface
 -> it FUNCTION
 -> expect FUNCTION
--> toBeTruthy() FUNCTION, toHaveBeenCalledWith() FUNCTION, toBeFalse() FUNCTION
+-> toBeTruthy() FUNCTION, toHaveBeenCalledWith() FUNCTION, toBeFalse() FUNCTION, toBeUndefined() FUNCTION
 -> TESTBED.inject() FUNCTION
 -> fixture.detectChanges() FUNCTION
 -> patchValue() FUNCTION
+-> spyOn() FUNCTION, returnValue() FUNCTION
 -> 
 
 

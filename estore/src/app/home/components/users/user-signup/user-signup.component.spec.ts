@@ -64,9 +64,21 @@ fdescribe('UserRegistrationComponent', () => {
     component.confirmPassword?.patchValue('pass1');
     fixture.detectChanges();
     expect(component.userSignupForm.errors?.['passwordMismatch']).toBeUndefined();
-
-
-
   });
+
+  it('should set suceess message for creating user successfully', fakeAsync(() => {
+    spyOn(userService, 'createUser').and.returnValue(
+      of({ message: 'success' })
+    );
+
+    component.onSubmit();
+    tick();
+
+    expect(component.alertMessage).toEqual('User created successfully');
+    expect(component.alertType).toEqual(0);
+  }));
+
+
+
 
 });
