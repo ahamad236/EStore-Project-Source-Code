@@ -1,22 +1,46 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
 
 import { UserSignupComponent } from './user-signup.component';
+import { UserService } from 'src/app/home/services/users/user-service.service';
+import { UserServiceMock } from 'src/app/shared/mocks/user-service.service.mock';
+import { ReactiveFormsModule } from "@angular/forms";
+import { of, throwError } from 'rxjs';
 
-describe('UserRegistrationComponent', () => {
+fdescribe('UserRegistrationComponent', () => {
   let component: UserSignupComponent;
   let fixture: ComponentFixture<UserSignupComponent>;
+  let userService: UserService;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [UserSignupComponent],
+      providers: [
+        { provide: UserService, useClass: UserServiceMock }
+      ],
+      imports: [ReactiveFormsModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(UserSignupComponent);
     component = fixture.componentInstance;
+    userService = TestBed.inject(UserService);
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should require value in firstName field', () => {
+    component.firstName?.patchValue('');
+    fixture.detectChanges();
+    expect(component.firstName?.valid).toBeFalse();
+
+    component.firstName?.patchValue('Tom');
+    fixture.detectChanges();
+    expect(component.firstName?.valid).toBeTrue();
+
+
+  })
+
+
 });

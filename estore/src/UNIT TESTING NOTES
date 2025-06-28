@@ -27,7 +27,9 @@
 -> ComponentFixture Class and TestBed Interface
 -> it FUNCTION
 -> expect FUNCTION
--> toBeTruthy FUNCTION, toHaveBeenCalledWith FUNCTION
+-> toBeTruthy() FUNCTION, toHaveBeenCalledWith() FUNCTION, toBeFalse() FUNCTION
+-> TESTBED.inject() FUNCTION
+-> fixture.detectChanges() FUNCTION
 -> 
 
 
@@ -54,7 +56,7 @@
 
             ON 28-06-2025
            ---------------
-           
+
  -> 302. 
 
 
