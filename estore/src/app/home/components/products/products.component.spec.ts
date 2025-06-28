@@ -7,7 +7,7 @@ import { CartStoreItem } from '../../services/cart/cart.storeItem';
 import { CartStoreItemMock } from 'src/app/shared/mocks/cartstoreitem.mock';
 import { Product } from '../../types/products.type';
 
-fdescribe('ProductsComponent', () => {
+describe('ProductsComponent', () => {
   let component: ProductsComponent;
   let fixture: ComponentFixture<ProductsComponent>;
   let cartStoreItem: CartStoreItem;
