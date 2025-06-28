@@ -30,6 +30,7 @@
 -> toBeTruthy() FUNCTION, toHaveBeenCalledWith() FUNCTION, toBeFalse() FUNCTION
 -> TESTBED.inject() FUNCTION
 -> fixture.detectChanges() FUNCTION
+-> patchValue() FUNCTION
 -> 
 
 

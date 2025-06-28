@@ -54,5 +54,19 @@ fdescribe('UserRegistrationComponent', () => {
     expect(component.email?.valid).toBeTrue();
   });
 
+  it('should match password and confirmPassword fields', () => {
+    component.password?.patchValue('pass1');
+    component.confirmPassword?.patchValue('pass2');
+    fixture.detectChanges();
+    expect(component.userSignupForm.errors?.['passwordMismatch']).toBeTrue();
+
+    component.password?.patchValue('pass1');
+    component.confirmPassword?.patchValue('pass1');
+    fixture.detectChanges();
+    expect(component.userSignupForm.errors?.['passwordMismatch']).toBeUndefined();
+
+
+
+  });
 
 });
