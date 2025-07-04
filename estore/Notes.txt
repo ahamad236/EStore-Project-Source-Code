@@ -1,0 +1,374 @@
+
+			
+		 WORKING FUNCTIONALITY OF FOCUSX
+		---------------------------------
+
+
+   
+
+FocusX ERP is a comprehensive, AI-driven, cloud-based Enterprise Resource Planning system developed by Focus Softnet. Designed to streamline and automate business operations, it offers end-to-end functionalities that integrate various departments within an organization. Here's an overview of its core modules and how they work together:
+FocusSoftNet
++3
+Welsoft Technologies
++3
+SoftwareSuggest
++3
+
+🧩 Core Modules and Their Functionalities
+1. Financial Management
+Accounts Payable & Receivable: Manage vendor and customer transactions, automate billing, and track payments.
+
+General Ledger: Maintain a central repository for all financial data, ensuring accurate reporting.
+
+Bank Reconciliation: Automate the reconciliation of bank statements with accounting records.
+
+Budgeting & Forecasting: Plan and predict financial performance using historical data.
+
+Multi-Currency & Multi-Language Support: Facilitate global operations with support for various currencies and languages.
+FocusSoftNet
+crozdesk.com
++1
+Welsoft Technologies
++1
+
+2. Inventory & Warehouse Management
+Real-Time Tracking: Monitor stock levels and movements across multiple locations.
+
+Automated Reordering: Set thresholds for automatic stock replenishment.
+
+Barcode Scanning: Utilize barcode technology for efficient inventory management.
+
+Bin Management: Organize inventory within warehouses using bin locations.
+
+Material Return & Replacement: Manage returns and replacements efficiently.
+FocusSoftNet
+
+3. Sales & Distribution
+Order Management: Track sales orders from creation to delivery.
+
+Pricing & Discounts: Define pricing strategies and apply discounts.
+
+Customer Relationship Management (CRM): Manage customer interactions and data.
+
+Shipping & Delivery: Coordinate logistics and track shipments.
+
+Returns Management: Handle product returns and exchanges.
+SoftwareSuggest
+
+4. Purchase Management
+Vendor Management: Maintain relationships and records of suppliers.
+
+Purchase Orders: Create and manage purchase orders.
+
+Goods Receipt: Record the receipt of goods and services.
+
+Invoice Matching: Match invoices with purchase orders and goods receipts.
+
+Supplier Payments: Process payments to suppliers.
+
+5. Manufacturing & Production Planning
+Bill of Materials (BOM): Define the components required for production.
+
+Work Orders: Generate and manage work orders for manufacturing.
+
+Production Scheduling: Plan and schedule production activities.
+
+Capacity Planning: Ensure resources are available for production.
+
+Quality Control: Implement quality checks throughout the production process.
+
+6. Human Capital Management (HCM)
+Employee Records: Maintain comprehensive employee information.
+
+Payroll Management: Calculate and process employee salaries.
+
+Leave & Attendance: Track employee leave and attendance.
+
+Performance Appraisal: Evaluate employee performance.
+
+Recruitment & Onboarding: Manage hiring processes and integrate new employees.
+
+7. Project Management
+Project Planning: Define project scope, objectives, and timelines.
+
+Resource Allocation: Assign resources to project tasks.
+
+Budgeting & Costing: Monitor project budgets and costs.
+
+Task Management: Track and manage project tasks.
+
+Progress Monitoring: Evaluate project progress against milestones.
+TrustRadius
+
+8. Customer & Vendor Portals
+Self-Service Access: Allow customers and vendors to access relevant information.
+
+Order Tracking: Enable tracking of orders and shipments.
+
+Invoice Management: View and manage invoices.
+
+Communication Tools: Facilitate direct communication with support teams.
+
+Document Sharing: Share important documents securely.
+Scopex
++1
+crozdesk.com
++1
+
+9. Business Intelligence & Analytics
+Data Visualization: Create interactive dashboards and reports.
+
+Predictive Analytics: Forecast trends and outcomes.
+
+KPI Monitoring: Track key performance indicators.
+
+Custom Reports: Generate reports tailored to specific business needs.
+
+Real-Time Insights: Access up-to-date business data for informed decision-making.
+Welsoft Technologies
+
+10. AI & Automation (AIFA)
+Predictive Analytics: Anticipate business trends and outcomes.
+
+Process Automation: Automate routine tasks and workflows.
+
+Machine Learning: Learn from data patterns to improve processes.
+
+Chatbots & Virtual Assistants: Provide automated customer support.
+
+Intelligent Decision-Making: Support complex decision-making with AI insights.
+Welsoft Technologies
+
+🔄 End-to-End Workflow Example
+Sales Order Creation: A customer places an order through the sales portal.
+
+Inventory Check: The system checks stock levels in real-time.
+
+Production Scheduling: If items are out of stock, the system generates a work order for production.
+
+Manufacturing: Production is carried out as per the work order.
+
+Quality Control: Finished goods undergo quality checks.
+
+Shipping: Approved products are shipped to the customer.
+
+Invoicing: An invoice is generated and sent to the customer.
+
+Payment Processing: The customer makes a payment through integrated payment gateways.
+
+Bank Reconciliation: Payments
+
+
+
+	============================================================
+
+
+		 FUNCTIONALITY OF DESIGN WORKFLOW SCREEN
+		-----------------------------------------
+
+The Design Workflow screen in FocusX ERP serves as a powerful, user-friendly tool that allows businesses to visualize, customize, and automate their internal processes without requiring any programming expertise. This feature is particularly beneficial for organizations seeking to streamline operations, enhance efficiency, and ensure compliance across various departments.
+
+🔧 Key Functionalities of the Design Workflow Screen
+Visual Workflow Design
+
+Utilize a drag-and-drop interface to create and modify workflows.
+
+Design workflows for various processes such as sales orders, purchase approvals, and inventory management.
+
+No coding skills are necessary, making it accessible for users at all technical levels.
+focussoftnet.us
+
+Customizable Approval Processes
+
+Define multi-level authorization flows to control who approves what and when.
+
+Set up escalation rules to ensure timely approvals; if one approver doesn't act within a specified timeframe, the request can be automatically forwarded or rejected. 
+purshology.com
+
+Integration with Other Modules
+
+Link workflows to other ERP modules such as inventory, finance, and HR to create end-to-end automation.
+
+For example, a purchase requisition can trigger an approval workflow and, upon approval, automatically generate a purchase order.
+
+User Notifications and Alerts
+
+Set up email, SMS, or dashboard alerts to notify users of pending approvals or actions.
+
+Keep all stakeholders informed and ensure that no critical steps are overlooked.
+purshology.com
+
+Audit Trails and Compliance
+
+Maintain a comprehensive audit trail of all actions taken within the workflow.
+
+This feature is crucial for compliance with industry regulations and internal policies.
+
+Reusable Templates
+
+Save and reuse workflow templates across different departments or processes, promoting consistency and reducing setup time.
+
+✅ Benefits of Using the Design Workflow Screen
+Enhanced Efficiency: Automate repetitive tasks and approvals, reducing manual intervention and the risk of errors.
+
+Improved Compliance: Ensure that all processes adhere to organizational policies and regulatory requirements.
+
+Increased Transparency: Provide clear visibility into process flows and approval statuses for all stakeholders.
+
+Scalability: Easily adapt workflows as your business grows or as processes evolve.
+
+🧭 Conclusion
+The Design Workflow screen in FocusX ERP is an indispensable tool for businesses aiming to optimize their operations. By providing a visual, intuitive interface for workflow customization, it empowers organizations to automate processes, enforce compliance, and enhance overall efficiency. Whether you're in manufacturing, retail, or service industries, this feature can be tailored to meet your specific needs.
+
+
+
+==================================================================
+
+
+		 FACING CHALLANGES WHILE WORKING ON PROJECT
+		--------------------------------------------
+
+1) if we want to handle any dom event only on parent and we don't want it to handle on child then we have to handle like below
+		if(event.target === event.currentTarget)
+		{
+			// Our code should be here
+		}
+
+
+2) have to check why & (bitwise and operator) use in c# asp.net core web api
+
+
+
+	===================================
+
+		 24-06-2025
+		------------
+
+	COMPLETED SCREENS AND CONTROLS IN FOCUSXI
+
+-> ALERT POPUP CONTROL
+-> LOCK/UNLOCK DATABASE SCREEN
+-> TIME CONTROL
+-> MAIN SETTINGS SCREEN
+-> DESIGN WORKFLOW SCREEN
+-> CREATE PLUGIN SCREEN	    -> WORKING
+
+
+
+	==================================
+
+		 04-07-2025
+		------------
+
+		 FACING CHALLANGES
+
+-> i have parent element class row, and its children are having col-xxl-4 col-xl-4 flexbox classes and for parent i have set height, the issue was if number of children elements are less for example having two rows then the children rows are occupying full height of container, so there was gap coming between rows
+      SOLUTION : for parent element which is having row class, have to set align-content-start class
+
+
+-> focus started on FOCUS8W, windows application, if we want any bl method to change then we have to change in FOCUS8W and then we have to make it as bat file and then run that bat file so wherever in our system, like that bl folder is usable in FOCUS9, FOCUSX, FOCUSXI so everywehre this file will be replaced. so we have share that dlls to others they will replace in their project locations
+
+
+-> to start focus9 project, if browser is showing unable to make the session state request to the state server. 
+Then   windows+R    ->	services.msc	->   click on ASP.NET State Service	->		click on start
+
+
+-> 
+
+
+
+		 FUNCTIONALITY OF SETTINGS SCREEN
+		----------------------------------
+
+In Focus 9 ERP, the Settings screen is the central hub for system configuration and controls—here’s what you can do:
+
+⚙️ Core Areas within Settings
+Workflow Designer
+
+Drag & drop interface to design or customize entity workflows without coding.
+
+Useful for creating approval flows, multi-step transactions, etc. 
+focussoftnet.us
++11
+purshology.com
++11
+software.iquasar.com
++11
+
+Transaction Authorization
+
+Define approval rules on documents (e.g., purchase orders).
+
+Automatically notifies approvers via email/SMS/dashboard alerts.
+
+Supports multi‑level escalation: if someone doesn’t respond in time, it rejects or moves the request onward.
+
+External Module Integration
+
+Register and configure external systems (via APIs) so Focus 9 can connect with third-party software.
+
+Manage them centrally under Settings. 
+purshology.com
+
+🔧 Why Settings Screen Matters
+Full administrative control: Define how your organization works—from transaction flows to security and integrations.
+
+Modular & no‑code: Make changes via UI; no need to edit core code.
+
+Governance & compliance: Centralized rules for approvals, escalations, and external integrations.
+
+🛠️ Typical Admin Tasks
+Task	What You Do
+Set up workflows	Build or adjust steps for document routing, alerts, etc.
+Configure authorizations	Add approvers, define levels & time limits.
+Enable integrations	Register APIs for external modules like CRM, e-commerce, logistics.
+User-role controls	(Often included) Manage permissions, access levels per role.
+
+✅ Summary
+The Settings screen isn’t just "preferences"—it’s the backbone of Focus 9's customization:
+
+Design workflows
+
+Manage approval policies with escalations
+
+Configure external integrations
+
+Control system-wide governance
+
+Anything you want to change in how transactions flow, get approved, or connect with other systems? Start in Settings.
+
+
+
+ ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
