@@ -342,6 +342,22 @@ Anything you want to change in how transactions flow, get approved, or connect w
  ===================================================================
 
 
+            8-7-2025
+           ----------
+
+-> If we declare variable without using var, let, const then it declared as global vairable but it's not good way
+-> If we add 'use strict' on starting of the js file then runtime erros will come for undeclared variables
+
+-> If client side and server side types doesn't match then 400 bad request will come
+
+
+
+=======================================================================
+
+
+            9-7-2025
+           ----------
+
 
 
 
