@@ -6,7 +6,7 @@ import { UserServiceMock } from 'src/app/shared/mocks/user-service.service.mock'
 import { ReactiveFormsModule } from "@angular/forms";
 import { of, throwError } from 'rxjs';
 
-fdescribe('UserRegistrationComponent', () => {
+describe('UserRegistrationComponent', () => {
   let component: UserSignupComponent;
   let fixture: ComponentFixture<UserSignupComponent>;
   let userService: UserService;
