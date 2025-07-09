@@ -358,10 +358,33 @@ Anything you want to change in how transactions flow, get approved, or connect w
             9-7-2025
            ----------
 
+               FACED CHALLANGES
+              ------------------
+
+-> If we define class and used as type of property of another class but when data is getting from api in the api data if that property is not avaiblable in function in client side we have to initialize that property to default value otherwise it's coming as undefined in later functions
+
+
+-> If while sending data to api, if we don't want some properties then we can do like below using object destructuring
+     arrayName.map(({prop1, prop2, ...props}) => props)
+   in the above syntax prop1 and prop2 will be deleted
+
+
+-> If we have large structure in API and if we don't need to define all the properties in client side then we can do like below
+			let obj: any;
+			obj = {};
+			obj.prop1 = 'val';
+			obj.prop2 = true;
+NOTE: in api parameters these two properties must match and properties type should be same
 
 
 
+=====================================================================
 
+
+                  10-07-2025
+                -------------
+
+-> 
 
 
 
