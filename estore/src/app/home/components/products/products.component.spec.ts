@@ -1,10 +1,10 @@
-import { ProductsStoreItemMock } from '../../../shared/mocks/productsstoreitem.mock';
+import { ProductsStoreItemMock } from '../../../shared/mocks/products.storeitem.mock';
 import { ProductsStoreItem } from './../../services/product/products.storeItem';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProductsComponent } from './products.component';
 import { CartStoreItem } from '../../services/cart/cart.storeItem';
-import { CartStoreItemMock } from 'src/app/shared/mocks/cartstoreitem.mock';
+import { CartStoreItemMock } from 'src/app/shared/mocks/cart.storeitem.mock';
 import { Product } from '../../types/products.type';
 
 describe('ProductsComponent', () => {
