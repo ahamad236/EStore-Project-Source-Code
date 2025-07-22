@@ -12,7 +12,7 @@ import { CategoriesStoreItemMock } from 'src/app/shared/mocks/categories.storeit
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReplaySubject } from 'rxjs';
 
-fdescribe('HeaderComponent', () => {
+describe('HeaderComponent', () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
   let router: Router;

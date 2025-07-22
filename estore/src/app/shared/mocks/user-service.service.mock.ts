@@ -6,7 +6,7 @@ export class UserServiceMock {
     isUserAuthenticated$: Observable<boolean> = of(true);
     loggedInUser$: Observable<loggedInUser> = of<loggedInUser>();
     loggedInUser: any;
-    token: any;
+    token: any = 'token123';
     createUser(): any { };
     login(): any { };
     activateToken(): any { };

@@ -33,6 +33,7 @@
 -> patchValue() FUNCTION
 -> spyOn() FUNCTION, returnValue() FUNCTION, of() FUNCTION, throwError() FUNCTION
 -> eventSubject.next(), new NavigationEnd()
+-> HttpTestingController.expectOne()
 -> 
 
 
@@ -66,6 +67,6 @@
            ON 22-07-2025
           ---------------
  -> 303. Unit testing routes
- -> 304. 
+ -> 304. Unit testing http services (done upto 3:10 minutes)
 
 
