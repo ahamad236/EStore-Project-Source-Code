@@ -32,6 +32,7 @@
 -> fixture.detectChanges() FUNCTION
 -> patchValue() FUNCTION
 -> spyOn() FUNCTION, returnValue() FUNCTION, of() FUNCTION, throwError() FUNCTION
+-> eventSubject.next(), new NavigationEnd()
 -> 
 
 
@@ -64,6 +65,7 @@
 
            ON 17-07-2025
           ---------------
- -> 303.  have to work from 3:40 onwards, have to check why test failing
+ -> 303. Unit testing routes
+ -> 304. 
 
 

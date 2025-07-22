@@ -30,7 +30,7 @@ fdescribe('HeaderComponent', () => {
         { provide: UserService, useClass: UserServiceMock },
         { provide: CartStoreItem, useClass: CartStoreItemMock },
         { provide: CategoriesStoreItem, useClass: CategoriesStoreItemMock },
-        { provide: Router, useClass: routerMock }
+        { provide: Router, useValue: routerMock }
       ],
       imports: [RouterTestingModule, FontAwesomeModule]
     })
@@ -44,5 +44,20 @@ fdescribe('HeaderComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should navigate to cart on calling navigateToCart', () => {
+    component.navigateToCart();
+    expect(router.navigate).toHaveBeenCalledWith(['home/cart']);
+  });
+
+  it('should display search if navigated to products', () => {
+    eventSubject.next(new NavigationEnd(1, '/home/products', '/home/products'));
+    expect(component.displaySearch).toBeTrue();
+  });
+
+  it('should not display search if not navigated to products', () => {
+    eventSubject.next(new NavigationEnd(1, '/home/cart', '/home/cart'));
+    expect(component.displaySearch).toBeFalse();
   });
 });
