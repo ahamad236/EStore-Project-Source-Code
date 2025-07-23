@@ -381,10 +381,34 @@ NOTE: in api parameters these two properties must match and properties type shou
 =====================================================================
 
 
-                  10-07-2025
-                -------------
+                  23-07-2025 FACED CHALLANGES
+		             ------------------------------
+
+-> if we want to extract substring from string we have to use stringVariable.slice(startindex, endindex),   it will extract text including startindex to endindex-1, it will not mutate the original value
+
+
+
+-> I am getting data from api which is having of type 5 properties and then i want to add extra 3 properties to that variable with some assigned values, below code will work
+
+  arrFields.map( (element: class1) => ({ ...element, prop6:'abc', prop7:'ccc', prop8:'zyc' }))
+
+
+
+-> I am having array of elements and for each element i am having 10 properties in client side, so i want to pass that array of elements with only 7 properties, below code will work
+
+  arrFields.map( ({ prop8, prop9, prop10, ...rest }) => rest ) 
+
+
+
+=======================================================================
+
+
+                  24-05-2025 FACED CHALLANGES
+                -------------------------------
 
 -> 
+
+
 
 
 
