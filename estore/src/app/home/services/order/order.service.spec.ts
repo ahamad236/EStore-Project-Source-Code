@@ -61,7 +61,16 @@ fdescribe('OrderService', () => {
     expect(request.request.method).toBe('GET');
     expect(request.request.headers.keys()).toEqual(['authorization']);
     expect(request.request.headers.get('authorization')).toEqual('token123');
+  });
 
+  it('should perform get request on getOrderProducts', () => {
+    service.getOrderProducts(1).subscribe();
+    const request: TestRequest = httptestingController.expectOne(
+      (req) => req.url === `http://localhost:5001/orders/orderproducts?orderId=1`
+    );
 
+    expect(request.request.method).toBe('GET');
+    expect(request.request.headers.keys()).toEqual(['authorization']);
+    expect(request.request.headers.get('authorization')).toEqual('token123');
   });
 });
