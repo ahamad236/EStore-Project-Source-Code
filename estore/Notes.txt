@@ -406,7 +406,27 @@ NOTE: in api parameters these two properties must match and properties type shou
                   24-05-2025 FACED CHALLANGES
                 -------------------------------
 
--> 
+
+-> If we want to send object to api whether you are retrieving data or whehter you are sending data, we have to use post only otherwise api will not being called, 415 error will come
+
+
+
+-> If we use post method in service in client side and if we put HttpGet attribute for api then we will get 405 error
+
+
+
+-> While getting data from clientside to api parameter, then that api parameter having structure defined like VWVoucherFields, in that Tag field is there and for that Tag field, the type would be object. but the data which we are getting having nested sturcutre like Tag.LinkId, so if i want to access objVWVoucherParam.Tag.LinkId error will come : doesn't contain definition for LinkId,  so below code will work
+
+	dynamic dynamicObjVWVoucherParam = objVWVoucherParam;
+	int linkId = 0;
+	if(dynamicObjVWVoucherParam.Tag.TryGetProperty("LinkId", out JsonElement linkIdElement)){
+ 		linkId = linkIdElement.GetInt32();	// Depending on the type
+	}
+
+
+	
+============================================================================
+
 
 
 
