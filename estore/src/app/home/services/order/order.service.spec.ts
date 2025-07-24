@@ -49,5 +49,19 @@ fdescribe('OrderService', () => {
     expect(request.request.method).toBe('POST');
     expect(request.request.headers.keys()).toEqual(['authorization']);
     expect(request.request.headers.get('authorization')).toEqual('token123');
-  })
+  });
+
+  it('should perform get request for getOrders', () => {
+    const userEmail: string = "ahamad123@gmail.com";
+    service.getOrders(userEmail).subscribe();
+    const request: TestRequest = httptestingController.expectOne(
+      (req) => req.url === `http://localhost:5001/orders/allorders?userEmail=${userEmail}`
+    );
+
+    expect(request.request.method).toBe('GET');
+    expect(request.request.headers.keys()).toEqual(['authorization']);
+    expect(request.request.headers.get('authorization')).toEqual('token123');
+
+
+  });
 });

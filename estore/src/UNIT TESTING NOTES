@@ -34,6 +34,7 @@
 -> spyOn() FUNCTION, returnValue() FUNCTION, of() FUNCTION, throwError() FUNCTION
 -> eventSubject.next(), new NavigationEnd()
 -> HttpTestingController.expectOne()
+-> expect().toEqual()
 -> 
 
 
