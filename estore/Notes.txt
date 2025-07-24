@@ -408,21 +408,45 @@ NOTE: in api parameters these two properties must match and properties type shou
                 -------------------------------
 
 
--> If we want to send object to api whether you are retrieving data or whehter you are sending data, we have to use post only otherwise api will not being called, 415 error will come
+1) If we want to send object to api whether you are retrieving data or whehter you are sending data, we have to use post only otherwise api will not being called, 415 error will come
 
 
 
--> If we use post method in service in client side and if we put HttpGet attribute for api then we will get 405 error
+2) If we use post method in service in client side and if we put HttpGet attribute for api then we will get 405 error
 
 
 
--> While getting data from clientside to api parameter, then that api parameter having structure defined like VWVoucherFields, in that Tag field is there and for that Tag field, the type would be object. but the data which we are getting having nested sturcutre like Tag.LinkId, so if i want to access objVWVoucherParam.Tag.LinkId error will come : doesn't contain definition for LinkId,  so below code will work
+3) While getting data from clientside to api parameter, then that api parameter having structure defined like VWVoucherFields, in that Tag field is there and for that Tag field, the type would be object. but the data which we are getting having nested sturcutre like Tag.LinkId, so if i want to access objVWVoucherParam.Tag.LinkId error will come : doesn't contain definition for LinkId,  so below code will work
 
 	dynamic dynamicObjVWVoucherParam = objVWVoucherParam;
 	int linkId = 0;
 	if(dynamicObjVWVoucherParam.Tag.TryGetProperty("LinkId", out JsonElement linkIdElement)){
  		linkId = linkIdElement.GetInt32();	// Depending on the type
 	}
+
+
+
+4) Exception in c# api : BinaryFormatter serialization and desirelization are disabled in this application
+			 SOLUTION
+			----------
+	-> If any property is having value null, which property was useful while sending data to database, so this error will come. If we pass default value without null for that property then issue will gone
+
+
+
+5) If we want to add element to array we can add as below
+	class IdNamePair{
+ 		int Id {get; set;}
+		string sName {get; set;}
+		string sCaption {get; set;}
+		object Tag {get; set;}
+	}
+
+
+          IdNamePair[] arrayVariableName = new IdNamePair[10];
+ 	  arrayVariableName[0] = new IdNamePair({ 1, null, null, 25 });
+
+   NOTE : if we have overloads then for string type properties we have to pass null
+
 
 
 	
