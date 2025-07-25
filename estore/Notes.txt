@@ -426,14 +426,7 @@ NOTE: in api parameters these two properties must match and properties type shou
 
 
 
-4) Exception in c# api : BinaryFormatter serialization and desirelization are disabled in this application
-			 SOLUTION
-			----------
-	-> If any property is having value null, which property was useful while sending data to database, so this error will come. If we pass default value without null for that property then issue will gone
-
-
-
-5) If we want to add element to array we can add as below
+4) If we want to add element to array we can add as below
 	class IdNamePair{
  		int Id {get; set;}
 		string sName {get; set;}
@@ -458,7 +451,27 @@ NOTE: in api parameters these two properties must match and properties type shou
              -----------------------------
 
 
+1) Exception in c# api : BinaryFormatter serialization and desirelization are disabled in this application
+			 SOLUTION 1
+			------------
+	-> If any property is having value null, which property was useful while sending data to database, so this error will come. If we pass default value without null for that property then issue will gone
+     
+      SOLUTION 2
+     ------------
+-> dll issue, if any property missing in class so while sending data to database this exception will come in API 
+
+
+
+
+============================================================================
+
+
+
+              26-07-2025 FACED CHALLENGES
+             -----------------------------
+
 1) 
+
 
 
 
