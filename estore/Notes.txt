@@ -467,10 +467,17 @@ NOTE: in api parameters these two properties must match and properties type shou
 
 
 
-              08-08-2025 FACED CHALLENGES
+              12-08-2025 FACED CHALLENGES
              -----------------------------
 
-1) 
+1) If we want to fold code in js file, like in script setup in vue.js project, we can use below syntax
+    /**
+       We need to add our description here, it will be foldable
+    */
+
+
+2) 
+
 
 
 
