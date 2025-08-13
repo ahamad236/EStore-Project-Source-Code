@@ -483,6 +483,7 @@ NOTE: in api parameters these two properties must match and properties type shou
              -----------------------------
 
 1) If we want to add comments to htm we have to follow below syntax
+       
        <!-- Node Delete Icon's Element -->
 
 
@@ -499,10 +500,14 @@ NOTE: in api parameters these two properties must match and properties type shou
 
 
 
-3) 
+3) If we want go add comments to css styles then we have to follow below syntax
+
+  /* This is the style for node' label element */
 
 
 
+
+============================================================================
 
 
 
