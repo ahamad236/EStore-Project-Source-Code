@@ -483,7 +483,24 @@ NOTE: in api parameters these two properties must match and properties type shou
              -----------------------------
 
 1) If we want to add comments to htm we have to follow below syntax
-       <!--  -->
+       <!-- Node Delete Icon's Element -->
+
+
+
+2) If we want to add comments to function we have to follow below syntax
+   
+   If it is single line then follow as below
+   // Function which will be invoked whenever we start drafging node
+
+   If it is multiline then follo as below
+   /**
+    add comments here, it could be foldable
+   */
+
+
+
+3) 
+
 
 
 
