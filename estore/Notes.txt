@@ -476,7 +476,15 @@ NOTE: in api parameters these two properties must match and properties type shou
     */
 
 
-2) 
+============================================================================
+
+
+              12-08-2025 FACED CHALLENGES
+             -----------------------------
+
+1) If we want to add comments to htm we have to follow below syntax
+       <!--  -->
+
 
 
 
