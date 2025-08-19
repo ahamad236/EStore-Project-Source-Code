@@ -528,9 +528,18 @@ NOTE: in api parameters these two properties must match and properties type shou
               19-08-2025 FACED CHALLENGES
              ------------------------------
 
-1)  
 
 
+1) If we want to write down comments for API's then if we simply type /// it will give us syntax to write comments in detailed way as follow below
+  /// <summary>
+  /// Get list of all vouchers by Unique Company ID
+  /// </summary>
+  /// <params name="companyID"> The Company ID </params>
+  /// <returns> All Vouchers of Specific Company ID </returns>
+
+
+
+2) 
 
 
 
