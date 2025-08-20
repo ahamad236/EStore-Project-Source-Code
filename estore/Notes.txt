@@ -551,11 +551,24 @@ NOTE: in api parameters these two properties must match and properties type shou
 
 
 
+============================================================================
+
+
+
+
+              20-08-2025 FACED CHALLENGES
+             ------------------------------
+
+
+1) shallow copy
+   which means it copies the object upto first level only and nested objestcs it doesn't copy but it copies the nestrd objects references, it depends on original objects for the nested objects
+
+
+2) deep copy
+  which means it copies the entire object including nested objects, it is fully independent.
+
+
 3) 
-
-
-
-
 
 
 
